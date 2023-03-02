@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/flexBox.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <p>box1</p>
+            <p>Flex Item</p>
+        </div>
+        <div class="box box2">
+            <p>box2</p>
+            <p>Flex Item</p>
+        </div>
+        <div class="box box3">
+            <p>box3</p>
+            <p>Flex Item</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Thuộc tính quan trọng của flex Container
+
+    FlexBox xử lí bố cục theo một chiều 
+        1. Chiều ngang (row)
+        2. Chiều dọc (column)
+
+    Trục: (flex )
+        1. main (ngang)
+        2. cross (dọc)
+
+    Nếu xét mặc định ' display: plex; ' cho container
+    thì các box con sẽ đc bố cục theo chiều từ trái sang phải theo chiều ngang
+
+    flex-direction: row (ngang)
+                    column (dọc)
+                    column-reverse (dọc nhưng xếp ngược lại)
+    
+    
+    flex-wrap: nonwrap (các flex Item không xuống hàng (sẽ tràn khỏi container khi số lượng
+                        vượt quá container))
+               wrap (tự động xuống hàng)
+
+
+    flex-flow: row wrap; (kết hợp giữa 'flex-direction' và 'flex-wrap')
+
+    justify-content: ;  (Căn chỉnh các flex Item theo trục ngang)
+
+    align-items: center; (căn chỉnh theo chiều dọc)
+--> 
+
+
+<!-- Thuộc tính quan trọng của các Flex Item
+    
+    Không gian khả dụng
+     flex-basis: auto;
+    
+
+    flex-grow: 1;  (tăng kích thước của flex item để chím hết không gian khả dụng)
+
+    flex-shrink: 1; (khi các flex Item bị tràn ra ngoài)
+
+    flex: 1 1 auto; (grow, shrink, basis)
+
+    order: 1;  (xếp thứ tự chủa flex box)
+-->
